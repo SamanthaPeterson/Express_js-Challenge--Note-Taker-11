@@ -1,4 +1,4 @@
-let db_Data = require('../db/db.json');
+let db_Data = require('../../../db/db.json');
 const fs = require('fs');
 const path = require('path');
 const filePath = __dirname + '/../db/db.json';
