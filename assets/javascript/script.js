@@ -3,6 +3,7 @@
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const nodemon = require("nodemon");
 
 //create the routes and use express middleware
 const app = express();
@@ -42,6 +43,14 @@ app.listen(PORT, function () {
 //run npm init
 // npm install express --save
 // npm init
+//npm install - g nodemon
+//nodemon [your node app]
+//npm i nodemon
+//npm install
+//npm start
+
+//nodemon. / server.js localhost 8080
+
 
 
 //-----=======++++++-----=======++++++-----=======++++++-----=======++++++
@@ -49,6 +58,10 @@ app.listen(PORT, function () {
 //resources
 //https: //expressjs.com/
 // to install express https://expressjs.com/en/starter/installing.html
+//node needs to be installed https://nodejs.org/en/
+//https: //www.npmjs.com/package/nodemon
+//https: //www.npmjs.com/package/express
+
 //-----=======++++++-----=======++++++-----=======++++++-----=======++++++
 
 //info
