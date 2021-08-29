@@ -4,7 +4,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 
-//notes here
+//create the routes and use express middleware
 const app = express();
 const PORT = process.env.PORT || 4001
 
