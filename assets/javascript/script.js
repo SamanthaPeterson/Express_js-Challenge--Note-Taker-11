@@ -17,7 +17,12 @@ app.use(express.urlencoded({
     extended: true
 }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use("/assets", express.static("./assets"));
+
+//Set up the root directory  and routes 
+app.use(express.static("public"));
+app.use('/api', api.js);
+app.use('/html', html.js);
 
 
 // ROUTING
