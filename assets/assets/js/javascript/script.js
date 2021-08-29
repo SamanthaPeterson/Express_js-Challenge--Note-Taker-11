@@ -270,17 +270,22 @@ app.listen(PORT, function () {
 //-----=======++++++-----=======++++++-----=======++++++-----=======++++++
 
 //steps & commands 
+//npm install
+//npm start
+// npm install express --save
+//npm install - g nodemon
+//nodemon [your node app]
 
 
 // node app.js
 //run npm init
-// npm install express --save
+
 // npm init
-//npm install - g nodemon
-//nodemon [your node app]
+
+
 //npm i nodemon
-//npm install
-//npm start
+
+
 
 //nodemon. / server.js localhost 8080
 
