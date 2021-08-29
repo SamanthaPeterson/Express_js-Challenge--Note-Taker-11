@@ -66,3 +66,14 @@ app.listen(PORT, function () {
 
 //info
 //express is a framework for node js
+
+
+// {
+//   "name": "nodemon",
+//   "homepage": "http://nodemon.io",
+//   "...": "... other standard package.json values",
+//   "nodemonConfig": {
+//     "ignore": ["test/*", "docs/*"],
+//     "delay": 2500
+//   }
+// }
