@@ -9,6 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 4001
 
 
+// Set up the Express app for data parsing
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+app.use(express.static('public'));
 
 
 
@@ -24,3 +30,11 @@ const PORT = process.env.PORT || 4001
 app.listen(PORT, function () {
     console.log(`Note Taker Server listening on PORT: ${PORT} open the app here: http://localhost:${PORT}`);
 });
+
+//steps
+// node app.js
+//run npm init
+
+
+//resources
+//https: //expressjs.com/
