@@ -11,9 +11,6 @@ const nodemon = require("nodemon");
 const app = express();
 const PORT = process.env.PORT || 3002
 
-
-
-
 // Set up the Express app for data parsing
 app.use(express.urlencoded({
     extended: true
@@ -27,26 +24,17 @@ app.use('/api', api.js);
 app.use('/html', html.js);
 
 
-// ROUTING
-
-module.exports = (app) => {
-    // => HTML GET Requests
-
-    app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/index.html'));
-    });
-
-    app.get('/notes', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/notes.html'));
-    });
-
-    // If no matching route is found default to home
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/index.html'));
-    });
-};
+// Sets up the Express app to handle data parsing
+// =============================================================
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+app.use("/assets", express.static("./assets"));
 
 
+require("./routing/html-routes")(app);
+require("./routing/api-routes")(app);
 
 
 let noteTitle;
@@ -232,6 +220,39 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+
+
+
+
+
+
+
+
+
+// ROUTING
+
+module.exports = (app) => {
+    // => HTML GET Requests
+
+    app.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/index.html'));
+    });
+
+    app.get('/notes', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/notes.html'));
+    });
+
+    // If no matching route is found default to home
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/index.html'));
+    });
+};
+
+
+
+
+
 
 
 
