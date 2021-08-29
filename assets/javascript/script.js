@@ -9,7 +9,7 @@ const nodemon = require("nodemon");
 
 //create the routes and use express middleware
 const app = express();
-const PORT = process.env.PORT || 4001
+const PORT = process.env.PORT || 3002
 
 
 // Set up the Express app for data parsing
