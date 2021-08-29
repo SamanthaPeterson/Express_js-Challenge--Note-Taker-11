@@ -10,14 +10,7 @@
 ## Description 
 Description zebra cat
 ## Installation 
-Here are a few useful download links for this project 
-NPM
-Node
-https://www.npmjs.com/package/express
-https://insomnia.rest/
-https://www.heroku.com/
-https://devcenter.heroku.com/articles/heroku-cli
-
+Node, inquirer, and pretty error are required to run this program. 
 ## Usage
 Video https://youtu.be/bnHWlMHp9Gw  instructions and use of project
 ## License
