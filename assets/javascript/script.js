@@ -31,10 +31,25 @@ app.listen(PORT, function () {
     console.log(`Note Taker Server listening on PORT: ${PORT} open the app here: http://localhost:${PORT}`);
 });
 
-//steps
+
+
+//-----=======++++++-----=======++++++-----=======++++++-----=======++++++
+//user guide for this project
+//-----=======++++++-----=======++++++-----=======++++++-----=======++++++
+
+//steps & commands 
 // node app.js
 //run npm init
+// npm install express --save
+// npm init
 
+
+//-----=======++++++-----=======++++++-----=======++++++-----=======++++++
 
 //resources
 //https: //expressjs.com/
+// to install express https://expressjs.com/en/starter/installing.html
+//-----=======++++++-----=======++++++-----=======++++++-----=======++++++
+
+//info
+//express is a framework for node js
