@@ -1,4 +1,4 @@
-//MY VARIABLES 
+//dependencies / requirements 
 
-//My API Key
-const apiKey = "";
+const express = require("express");
+const fs = require("fs");
