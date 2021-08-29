@@ -77,3 +77,8 @@ app.listen(PORT, function () {
 //     "delay": 2500
 //   }
 // }
+
+
+//nodemon server.js
+//nodemon server.js 3006
+//https://www.digitalocean.com/community/tutorials/workflow-nodemon
