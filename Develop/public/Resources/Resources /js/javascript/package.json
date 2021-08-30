@@ -1,0 +1,30 @@
+{
+  "name": "express_js-challenge--note-taker-11",
+  "version": "1.0.0",
+  "description": "note taker 11",
+  "main": "index.js",
+  "dependencies": {
+    "-": "^0.0.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "node": "^16.6.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Samantha Peterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11/issues"
+  },
+  "homepage": "https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11#readme"
+}
