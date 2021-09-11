@@ -1,10 +1,10 @@
 # Note Taker
 
 ## Description
-This application allows the user to enter notes and as they save, they appear in the sidebar on the left. Notes can be deleted by clicking the trash can next to the corresponding note.
+This application
 
 ## Screenshot
-![webpage screenshot](./public/assets/images/webpage-screenshot.png)
+![webpage screenshot](./ hj.png)
 
 ## Application Link
-https://note-taker-owais.herokuapp.com/
+https://ntherokuapp.com/
