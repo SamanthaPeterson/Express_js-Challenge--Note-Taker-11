@@ -1,0 +1,14 @@
+{
+  "notes": [
+    {
+      "title": "Welcome to Note Taker!",
+      "text": "This application allows you to add and delete notes. You can add notes by clicking the pencil icon at the top and then click the save icon once you have entered what you need.",
+      "id": "0"
+    },
+    {
+      "title": "Deleting Notes",
+      "text": "You can delete notes by clicking the trash can next to the note you would like to delete.",
+      "id": "1"
+    }
+  ]
+}
