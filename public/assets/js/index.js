@@ -25,7 +25,7 @@ var saveNote = function(note) {
 };
 
 // BONUS A function for deleting a note from the db
-var deleteNote = function(id) {
+var noteDeleteNote = function(id) {
   return $.ajax({
     url: "api/notes/" + id,
     method: "DELETE"
@@ -63,7 +63,7 @@ var handleNoteSave = function() {
 };
 
 // BONUS Delete the clicked note
-var handleNoteDelete = function(event) {
+var preventClickListenerDeleteNote = function(event) {
   // prevents the click listener for the list from being called when the button inside of it is clicked
   event.stopPropagation();
 
@@ -75,7 +75,7 @@ var handleNoteDelete = function(event) {
     activeNote = {};
   }
 
-  deleteNote(note.id).then(function() {
+  noteDeleteNote(note.id).then(function() {
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -135,7 +135,7 @@ var getAndRenderNotes = function() {
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
-$noteList.on("click", ".delete-note", handleNoteDelete);
+$noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
 $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 

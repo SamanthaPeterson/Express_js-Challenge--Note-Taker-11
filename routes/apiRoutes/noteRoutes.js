@@ -4,7 +4,7 @@ const {
 } = require('../../db/db');
 const {
     noteCreateNewNote,
-    deleteNote
+    noteDeleteNote
 } = require('../../lib/noteFunctions');
 
 
@@ -20,7 +20,7 @@ router.post('/notes', (req, res) => {
 })
 
 router.delete('/notes/:id', (req, res) => {
-    deleteNote(notes, req.params.id);
+    noteDeleteNote(notes, req.params.id);
     res.json(notes);
 })
 
