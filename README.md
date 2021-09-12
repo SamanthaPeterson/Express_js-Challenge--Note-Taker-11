@@ -1,4 +1,4 @@
-# Note Taker
+# Note Taker Express JS Appliicationn 
 
 ## Description
 This application was made with Express js and deployed using Heroku. It was tested locally before starting the steps to deploy the final product on Heroku. 
@@ -9,4 +9,16 @@ In your browser, type http://localhost:3306/. The view from the browser should s
 ![webpage screenshot](./ hj.png)
 
 ## Application Link
-https://ntherokuapp.com/
+https://homework-note-taker11.herokuapp.com/
+Walk through video -youtube
+http://localhost:3306/
+https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11
+
+## Contribute to the Project 
+![webpage screenshot](./ hj.png)
+
+## Contact Information
+Find me on Twitter Samantha Peterson @CodingAndDesign
+https://twitter.com/CodingAndDesign
+On Linkedin
+https://www.linkedin.com/in/samantha-peterson-web-developer-photographer/
