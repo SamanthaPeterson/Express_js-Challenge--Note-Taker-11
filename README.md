@@ -10,7 +10,7 @@ In your browser, type http://localhost:3306/. The view from the browser should s
 
 ## Application Link
 https://homework-note-taker11.herokuapp.com/
-Walk through video -youtube
+Walk through video -youtube https://youtu.be/i8dJxzmVaDM
 http://localhost:3306/
 https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11
 
