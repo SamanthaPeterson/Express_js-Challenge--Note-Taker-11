@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Express_js-Challenge--Note-Taker-11/Develop"
+		},
+		{
+			"path": "../../../Express_js-Challenge--Note-Taker-11/js"
+		},
+		{
+			"path": "../../../Express_js-Challenge--Note-Taker-11/node_modules"
+		}
+	],
+	"settings": {}
+}
