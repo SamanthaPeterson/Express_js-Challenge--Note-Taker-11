@@ -116,11 +116,11 @@ const displayListOfNotes = function(notes) {
     const $span = $("<span>").text(note.title);
     // const $delBtn = $(
     //   "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
-    );
+  };
 
-    $li.append($span, $delBtn);
-    noteListItems.push($li);
-  }
+    // $li.append($span, $delBtn);
+    // noteListItems.push($li);
+
 
   $noteList.append(noteListItems);
 };
