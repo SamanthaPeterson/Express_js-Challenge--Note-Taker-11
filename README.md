@@ -9,7 +9,7 @@ Currently experiencing issues with Delete Notes- work in progress
 
 ## Screenshot
 
-![webpage screenshot](./ hj.png)
+
 
 ## Application Link
 
