@@ -80,6 +80,8 @@ const handleNoteSave = function() {
 //     renderActiveNote();
 //   });
 // };
+//look at this -the delete operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
+
 
 // Sets the activeNote and displays it
 const handleNoteView = function() {
