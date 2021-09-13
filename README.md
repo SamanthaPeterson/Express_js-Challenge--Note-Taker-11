@@ -8,7 +8,9 @@ In your browser, type <http://localhost:3306/>. The view from the browser should
 
 ## Screenshot
 
-![webpage screenshot](./ hj.png)
+<img width="1230" alt="Screen Shot 2021-09-13 at 11 13 05 AM" src="https://user-images.githubusercontent.com/85209802/133127711-94948660-8b26-49e9-908a-f078f47997e1.png">
+<img width="1230" alt="Screen Shot 2021-09-13 at 11 13 34 AM" src="https://user-images.githubusercontent.com/85209802/133127721-5bf46707-d9a5-40b5-a7e0-1bcdf448a78f.png">
+
 
 ## Application Link
 
@@ -19,7 +21,7 @@ Walk through video -youtube <https://youtu.be/i8dJxzmVaDM>
 
 ## Contribute to the Project
 
-![webpage screenshot](./ hj.png)
+Contact me to contribute to the project
 
 ## Contact Information
 
