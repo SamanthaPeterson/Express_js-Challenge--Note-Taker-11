@@ -39,3 +39,4 @@ app.listen(PORT, () => {
 //node server.js
 //npm install -g nodemon then nodemon server.js
 //i prefer running my programs with Nodemon file.js so that i don't have to exit and restart the server
+//you can use control c to exit the process at anytime (that is on a mac it may vary for other systems)
