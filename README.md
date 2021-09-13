@@ -7,8 +7,9 @@ Notetaker is a simple notetaking application. When the user first enters the ini
 In your browser, type <http://localhost:3306/>. The view from the browser should show the application on your local machine. Then once my application looked good, it was deployed to Heroku. In the code, there are comments through the project to help other developers understand what is there and how it operates.
 
 ## Screenshot
+<img width="1230" alt="Screen Shot 2021-09-13 at 11 13 05 AM" src="https://user-images.githubusercontent.com/85209802/133151808-f4a8081b-bebb-43ad-b20a-d177677ca60e.png">
+<img width="1230" alt="Screen Shot 2021-09-13 at 11 13 34 AM" src="https://user-images.githubusercontent.com/85209802/133151830-c0a592a2-ca39-43f1-86bd-e432e0bee7e2.png">
 
-![webpage screenshot](./ hj.png)
 
 ## Application Link
 
@@ -19,8 +20,7 @@ Walk through video -youtube <https://youtu.be/i8dJxzmVaDM>
 
 ## Contribute to the Project
 
-![webpage screenshot](./ hj.png)
-
+Contact me to make contributions to the project
 ## Contact Information
 
 Find me on Twitter Samantha Peterson @CodingAndDesign
