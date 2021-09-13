@@ -4,7 +4,7 @@ const {
 } = require('../../db/db');
 const {
     noteCreateNewNote,
-    noteDeleteNote
+    // noteDeleteNote
 } = require('../../lib/noteFunctions');
 
 

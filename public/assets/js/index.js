@@ -24,13 +24,13 @@ const saveNote = function(note) {
   });
 };
 
-// deleting note from the db
-const noteDeleteNote = function(id) {
-  return $.ajax({
-    url: "api/notes/" + id,
-    method: "DELETE"
-  });
-};
+// // deleting note from the db
+// const noteDeleteNote = function(id) {
+//   return $.ajax({
+//     url: "api/notes/" + id,
+//     method: "DELETE"
+//   });
+// };
 
 // If there is an activeNote, display it, otherwise render empty inputs
 const renderActiveNote = function() {
@@ -62,24 +62,24 @@ const handleNoteSave = function() {
   });
 };
 
-// BONUS Delete the clicked note
-const preventClickListenerDeleteNote = function(event) {
-  // prevents the click listener for the list from being called when the button inside of it is clicked
-  event.stopPropagation();
+// // Delete the clicked note
+// const preventClickListenerDeleteNote = function(event) {
+//   // prevents the click listener for the list from being called when the button inside of it is clicked
+//   event.stopPropagation();
 
-  const note = $(this)
-    .parent(".list-group-item")
-    .data();
+//   const note = $(this)
+//     .parent(".list-group-item")
+//     .data();
 
-  if (activeNote.id === note.id) {
-    activeNote = {};
-  }
+//   if (activeNote.id === note.id) {
+//     activeNote = {};
+//   }
 
-  noteDeleteNote(note.id).then(function() {
-    getAndRenderNotes();
-    renderActiveNote();
-  });
-};
+//   noteDeleteNote(note.id).then(function() {
+//     getAndRenderNotes();
+//     renderActiveNote();
+//   });
+// };
 
 // Sets the activeNote and displays it
 const handleNoteView = function() {
@@ -114,8 +114,8 @@ const displayListOfNotes = function(notes) {
 
     const $li = $("<li class='list-group-item'>").data(note);
     const $span = $("<span>").text(note.title);
-    const $delBtn = $(
-      "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
+    // const $delBtn = $(
+    //   "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
 
     $li.append($span, $delBtn);
@@ -135,7 +135,7 @@ const getAndRenderNotes = function() {
 $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
-$noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
+// $noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
 $noteTitle.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
