@@ -36,6 +36,7 @@ app.use('/', htmlRoutes);
 
 //app.listen() Function https://www.geeksforgeeks.org/express-js-app-listen-function/
 //function is used to bind and listen the connections on the specified host and port
+//app.listen() = an asynchronous operation
 //https: //www.google.com/search?q=app.listen(PORT,+()+%3D%3E+%7B&rlz=1C5CHFA_enUS956US956&ei=UTg9Ydy9Bo_L0PEPnIqtgA8&oq=app.listen(PORT,+()+%3D%3E+%7B&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELADMggIABCABBCwAzIICAAQgAQQsAMyCAgAEIAEELADMggIABCABBCwAzIICAAQgAQQsAMyCAgAEIAEELADMggIABCABBCwAzIHCAAQsAMQHjIICAAQgAQQsAMyCAgAEOQCELADMggIABDkAhCwAzIICAAQ5AIQsANKBQg8EgExSgQIQRgBULrxfli68X5g9fd-aAFwAHgAgAEAiAEAkgEAmAEAoAECoAEByAENwAEB&sclient=gws-wiz&ved=0ahUKEwicqs6khvjyAhWPJTQIHRxFC_AQ4dUDCA4&uact=5&pccc=1
 app.listen(PORT, () => {
     //debugging
