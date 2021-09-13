@@ -9,6 +9,10 @@ const nodemon = require('nodemon');
 //https: //www.npmjs.com/package/nodemon
 const fs = require('fs');
 const path = require('path');
+
+//"we are requiring Express and creating a new instance of Router on it. We are holding that in a variable called routes. Then we are creating a route at the root path of this Router that sends back a simple message. Then we export the Router."
+//https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
+//this link talks about understanding and keeping routes organized
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
@@ -19,11 +23,14 @@ app.use(express.urlencoded({
     extended: true
 }));
 
+//static files - specifies the root directory from which to serve static assets https://expressjs.com/en/starter/static-files.html
 //adds a middleware - To serve static files such as images, CSS files, and JavaScript file
 // https: //www.google.com/search?q=app.use(express.static&rlz=1C5CHFA_enUS956US956&oq=app.use(express.static&aqs=chrome..69i57j0i512l9.1090j0j15&sourceid=chrome&ie=UTF-8
 app.use(express.static('public'));
 app.use(express.json());
-//
+
+//"bringing in Express and our routes. We are connecting our routes to our application using .use"
+//https: //scotch.io/tutorials/keeping-api-routing-clean-using-express-routers
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
