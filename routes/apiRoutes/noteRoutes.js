@@ -1,5 +1,3 @@
-//how end points respond to client requests https://expressjs.com/en/guide/routing.html
-//https: //expressjs.com/en/starter/basic-routing.html
 const router = require("express").Router();
 const {
     notes
