@@ -1,4 +1,4 @@
-const $noteTitle = $(".note-title");
+const $noteTitleOfNote = $(".note-title");
 const $noteText = $(".note-textarea");
 const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
@@ -37,14 +37,14 @@ const renderActiveNote = function() {
   $saveNoteBtn.hide();
 
   if (activeNote.id) {
-    $noteTitle.attr("readonly", true);
+    $noteTitleOfNote.attr("readonly", true);
     $noteText.attr("readonly", true);
-    $noteTitle.val(activeNote.title);
+    $noteTitleOfNote.val(activeNote.title);
     $noteText.val(activeNote.text);
   } else {
-    $noteTitle.attr("readonly", false);
+    $noteTitleOfNote.attr("readonly", false);
     $noteText.attr("readonly", false);
-    $noteTitle.val("");
+    $noteTitleOfNote.val("");
     $noteText.val("");
   }
 };
@@ -52,7 +52,7 @@ const renderActiveNote = function() {
 // Get the note data from the inputs, save it to the db and update the view
 const handleNoteSave = function() {
   const newNote = {
-    title: $noteTitle.val(),
+    title: $noteTitleOfNote.val(),
     text: $noteText.val()
   };
 
@@ -98,7 +98,7 @@ const handleNewNoteView = function() {
 // If a note's title or text are empty, hide the save button
 // Or else show it
 const handleRenderSaveBtn = function() {
-  if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
+  if (!$noteTitleOfNote.val().trim() || !$noteText.val().trim()) {
     $saveNoteBtn.hide();
   } else {
     $saveNoteBtn.show();
@@ -138,7 +138,7 @@ $saveNoteBtn.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
 // $noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
-$noteTitle.on("keyup", handleRenderSaveBtn);
+$noteTitleOfNote.on("keyup", handleRenderSaveBtn);
 $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
