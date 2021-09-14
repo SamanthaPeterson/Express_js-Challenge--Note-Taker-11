@@ -1,7 +1,7 @@
 const $noteTitleOfNote = $(".note-title");
-const $noteText = $(".note-textarea");
-const $saveNoteBtn = $(".save-note");
-const $newNoteBtn = $(".new-note");
+const $noteTextArea = $(".note-textarea");
+const $noteSaveButton = $(".save-note");
+const $noteCreateNewNoteButton = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
 // activeNote is used to keep track of the note in the textarea
@@ -34,18 +34,18 @@ const saveNote = function(note) {
 
 // If there is an activeNote, display it, otherwise render empty inputs
 const renderActiveNote = function() {
-  $saveNoteBtn.hide();
+  $noteSaveButton.hide();
 
   if (activeNote.id) {
     $noteTitleOfNote.attr("readonly", true);
-    $noteText.attr("readonly", true);
+    $noteTextArea.attr("readonly", true);
     $noteTitleOfNote.val(activeNote.title);
-    $noteText.val(activeNote.text);
+    $noteTextArea.val(activeNote.text);
   } else {
     $noteTitleOfNote.attr("readonly", false);
-    $noteText.attr("readonly", false);
+    $noteTextArea.attr("readonly", false);
     $noteTitleOfNote.val("");
-    $noteText.val("");
+    $noteTextArea.val("");
   }
 };
 
@@ -53,7 +53,7 @@ const renderActiveNote = function() {
 const handleNoteSave = function() {
   const newNote = {
     title: $noteTitleOfNote.val(),
-    text: $noteText.val()
+    text: $noteTextArea.val()
   };
 
   saveNote(newNote).then(function(data) {
@@ -98,10 +98,10 @@ const handleNewNoteView = function() {
 // If a note's title or text are empty, hide the save button
 // Or else show it
 const handleRenderSaveBtn = function() {
-  if (!$noteTitleOfNote.val().trim() || !$noteText.val().trim()) {
-    $saveNoteBtn.hide();
+  if (!$noteTitleOfNote.val().trim() || !$noteTextArea.val().trim()) {
+    $noteSaveButton.hide();
   } else {
-    $saveNoteBtn.show();
+    $noteSaveButton.show();
   }
 };
 
@@ -134,12 +134,12 @@ const getAndRenderNotes = function() {
   });
 };
 
-$saveNoteBtn.on("click", handleNoteSave);
+$noteSaveButton.on("click", handleNoteSave);
 $noteList.on("click", ".list-group-item", handleNoteView);
-$newNoteBtn.on("click", handleNewNoteView);
+$noteCreateNewNoteButton.on("click", handleNewNoteView);
 // $noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
 $noteTitleOfNote.on("keyup", handleRenderSaveBtn);
-$noteText.on("keyup", handleRenderSaveBtn);
+$noteTextArea.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
