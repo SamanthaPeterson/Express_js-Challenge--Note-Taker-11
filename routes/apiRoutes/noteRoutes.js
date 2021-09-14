@@ -12,7 +12,7 @@ const {
 //The Delete operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete
 const {
     noteCreateNewNote,
-    // noteDeleteNote
+    noteDeleteNote
 } = require('../../lib/noteFunctions');
 
 //save note history to json db 
@@ -32,10 +32,10 @@ router.post('/notes', (req, res) => {
     res.json(note);
 })
 
-// router.delete('/notes/:id', (req, res) => {
-//     noteDeleteNote(notes, req.params.id);
-//     res.json(notes);
-// })
+router.delete('/notes/:id', (req, res) => {
+    noteDeleteNote(notes, req.params.id);
+    res.json(notes);
+ })
 
 //https://stackoverflow.com/questions/56078508/why-is-module-exports-router-is-needed
 //the module.exports=router is mapping a router and the logic required to map file along with the right callbacks etc.
