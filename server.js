@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3306;
 //make sure you have express installed npm install express --save
 const express = require('express');
 const app = express();
-const nodemon = require('nodemon');
+
 //https: //www.npmjs.com/package/nodemon
 const fs = require('fs');
 const path = require('path');
