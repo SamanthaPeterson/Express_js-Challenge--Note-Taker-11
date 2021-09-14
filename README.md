@@ -14,7 +14,7 @@ Currently experiencing issues with Delete Notes- work in progress
 ## Application Link
 
 <https://dry-atoll-77782.herokuapp.com/>
-Walk through video -youtube <https://youtu.be/i8dJxzmVaDM>
+Walk through video -youtube <https://youtu.be/sJ7lkaeeEkw>
 <http://localhost:3306/>
 <https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11>
 
