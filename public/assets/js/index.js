@@ -2,7 +2,7 @@ const $noteTitleOfNote = $(".note-title");
 const $noteTextArea = $(".note-textarea");
 const $noteSaveButton = $(".save-note");
 const $noteCreateNewNoteButton = $(".new-note");
-const $noteList = $(".list-container .list-group");
+const $noteListContainerAndGroup = $(".list-container .list-group");
 
 // activeNote is used to keep track of the note in the textarea
 const activeNote = {};
@@ -107,9 +107,9 @@ const handleRenderSaveBtn = function() {
 
 // Render's the list of note titles
 const displayListOfNotes = function(notes) {
-  $noteList.empty();
+  $noteListContainerAndGroup.empty();
 
-  const noteListItems = [];
+  const noteListContainerAndGroupItems = [];
 
   for (const i = 0; i < notes.length; i++) {
     const note = notes[i];
@@ -121,10 +121,10 @@ const displayListOfNotes = function(notes) {
   };
 
     // $li.append($span, $delBtn);
-    // noteListItems.push($li);
+    // noteListContainerAndGroupItems.push($li);
 
 
-  $noteList.append(noteListItems);
+  $noteListContainerAndGroup.append(noteListContainerAndGroupItems);
 };
 
 // Gets notes from the db and renders them to the sidebar
@@ -135,9 +135,9 @@ const getAndRenderNotes = function() {
 };
 
 $noteSaveButton.on("click", handleNoteSave);
-$noteList.on("click", ".list-group-item", handleNoteView);
+$noteListContainerAndGroup.on("click", ".list-group-item", handleNoteView);
 $noteCreateNewNoteButton.on("click", handleNewNoteView);
-// $noteList.on("click", ".delete-note", preventClickListenerDeleteNote);
+// $noteListContainerAndGroup.on("click", ".delete-note", preventClickListenerDeleteNote);
 $noteTitleOfNote.on("keyup", handleRenderSaveBtn);
 $noteTextArea.on("keyup", handleRenderSaveBtn);
 
