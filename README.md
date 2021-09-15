@@ -12,8 +12,8 @@ In your browser, type <http://localhost:3306/>. The view from the browser should
 
 ## Application Link
 
-<https://homework-note-taker11.herokuapp.com/>
-Walk through video -youtube <https://youtu.be/i8dJxzmVaDM>
+<https://dry-atoll-77782.herokuapp.com/>
+Walk through video -youtube <https://youtu.be/sJ7lkaeeEkw>
 <http://localhost:3306/>
 <https://github.com/SamanthaPeterson/Express_js-Challenge--Note-Taker-11>
 
